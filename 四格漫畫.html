@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        background: url("try.svg");
+      }
+
+      body {
+        background: linear-gradient(rgba(255, 255, 255, 0.384) 30%, rgba(190, 164, 134, 0.671) 100%);
+        /* background: url("try.svg") 20%; */
+        font-family: "Noto Sans TC", sans-serif;
+      }
+
+      .container {
+        width: 1000px;
+        background: none;
+        color: rgb(138, 138, 138);
+        margin: auto;
+        display: flex;
+      }
+      .reflect {
+        -webkit-box-reflect: below 300px linear-gradient(transparent 50%, rgba(0, 0, 0, 0.8) 200%);
+      }
+
+      .field {
+        width: 250px;
+        height: 550px;
+        border: 0px;
+        padding: 15px;
+        font-size: 15px;
+        transform: translateY(150px);
+        font-family: "微軟正黑體";
+        /* list-style:50px; */
+        /* display: inline-block; */
+        /* margin: 20px; */
+        box-shadow: 0px 0px 15px 7px rgba(197, 175, 166, 0.4);
+      }
+
+      #img1 {
+        background-image: url("1.jpg");
+        background-size: 150px;
+        background-position-x: -25px;
+        background-position-y: 4px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px 50px;
+        text-align: center;
+        align-items: center;
+        transform: translate(60%, 30%);
+      }
+
+      #img1:hover {
+        background-image: url("2.jpg");
+        transform: translate(60%, 30%);
+        transition: 1s;
+      }
+
+      #img2 {
+        background: url("3.jpg");
+        background-size: 150px;
+        background-position-x: -25px;
+        background-position-y: 4px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px 50px;
+        text-align: center;
+        align-items: center;
+
+        /* transform: translateX(100px); */
+        /* transform: translateY(50px);*/
+        transform: translate(60%, 30%);
+        transition: 1s;
+      }
+
+      #img2:hover {
+        background: url("4.jpg");
+        text-align: center;
+        align-items: center;
+        background-size: cover;
+        /* transform: translate(60%, 30%); */
+        transition: 1s;
+      }
+
+      #img3 {
+        background: url("5.jpg");
+        background-size: 150px;
+        background-position-x: -25px;
+        background-position-y: 4px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px 50px;
+        text-align: center;
+        align-items: center;
+        display: block;
+        /* transform: translateX(100px); */
+        /* transform: translateY(50px);*/
+        transform: translate(60%, 30%);
+      }
+
+      #img3:hover {
+        background: url("6.jpg");
+        background-size: cover;
+        transform: translate(60%, 30%);
+        transition: 1s;
+      }
+      #img4 {
+        background: url("7.jpg");
+        background-size: 150px;
+        background-position-x: -25px;
+        background-position-y: 4px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px 50px;
+        text-align: center;
+        align-items: center;
+        display: block;
+        /* transform: translateX(100px); */
+        /* transform: translateY(50px);*/
+        transform: translate(60%, 30%);
+      }
+
+      #img4:hover {
+        background: url("8.jpg");
+        background-size: cover;
+        transform: translate(60%, 30%);
+        transition: 1s;
+      }
+      /*
+      img a:hover{
+        color:#ff0;
+        transition: 1s;
+        border-bottom:1px solid #ff0;
+      } */
+
+      .tittle {
+        font-size: 25px;
+        /* height: 50px; */
+        /* margin: 15px;
+        padding: 15px; */
+        /* text-align: right; */
+        display: inline-block;
+        color: rgb(185, 89, 89);
+        text-align: center;
+        transform: translate(175%, 30%);
+        font-weight: bold;
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+      @keyframes slidein {
+        from {
+          padding-left: 100%;
+          width: 300%;
+        }
+
+        to {
+          padding-left: 0%;
+          width: 23%;
+        }
+      }
+
+      .font {
+        width: 210px;
+        /* height: 50px; */
+        /* margin: 15px;
+        padding: 15px; */
+        /* text-align: right; */
+        display: inline-block;
+        color: rgba(116, 84, 66, 0.336);
+      }
+
+      .font:hover {
+        font-size: 19px;
+        color: rgb(116, 84, 66);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="field">
+        <div id="img1"></div>
+        <br /><br /><br />
+        <div class="reflect">
+          <div class="tittle">英雄</div>
+          <br />
+          <br />
+          <br />
+          <div class="font">
+            粉紅色小狗，由茉莉兒扶養，對茉莉兒十分忠心。 每當碰到害怕的事情，會以各種誇張或古怪的樣子突顯被嚇得魂不附體 隨後英雄會模仿該怪物的外表「告訴」茉莉兒與奧提斯，
+            但夫妻倆總不太懂英雄想要表達什麼，反而讓夫妻倆陷入危機。
+            <!-- <class class="box"> -->
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div id="img2"><a href="#"> </a></div>
+        <br /><br /><br />
+        <div class="reflect">
+          <div class="tittle">土星</div>
+          <br />
+          <br />
+          <br />
+          <div class="font">
+            她是美少女戰士們尋找的最後一名成員（土星仙子），其守護星為土星。 她是保護太陽系免受邪惡力量侵害的超自然戰士，她擁有跟毀滅、死亡與重生相關的力量，
+            由於她有能力消滅行星甚至是整個星系，以至重置其進化，這使她成為了一個潛在的威脅。
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div id="img3"><a href="#"> </a></div>
+        <br /><br /><br />
+        <div class="reflect">
+          <div class="tittle">阿力</div>
+          <br />
+          <br />
+          <br />
+          <div class="font">
+            恰恰的青梅竹馬，狼人家中的么子。 不需要月亮就能隨時變身成狼人，常常被恰恰當作狗。
+            與恰恰是同班同學。不會任何魔法但具有怪力，頭腦簡單，個性非常單純，非常喜歡恰恰，和希尼是情敵關係。住在貓咪屋。
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div id="img4"><a href="#"> </a></div>
+        <br /><br /><br />
+        <div class="reflect">
+          <div class="tittle">音符</div>
+          <br />
+          <br />
+          <br />
+          <div class="font">
+            見習生服裝顏色為紫色，作為隨從的精靈為「樂樂」， 波龍的音色為長笛音調，剛好對應音符擅長的樂器長笛， 使用魔法的咒語為「噗嚕嚕噗嚕 發咪發咪發」。眼睛和髮型皆為紫色，
+            頭髮左邊綁了八分音符造型的馬尾，而頭上的馬尾如同Doremi的丸子髮髻隨著年齡增長越來越小。
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
